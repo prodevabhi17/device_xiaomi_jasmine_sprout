@@ -28,6 +28,7 @@ $(call inherit-product, device/xiaomi/jasmine_sprout/device.mk)
 #$(call inherit-product, vendor/aosp/config/gsm.mk)
 
 # Inherit Carbon product configuration
+TARGET_GAPPS_ARCH := arm64
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Define first api level
@@ -35,7 +36,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 
 # CarbonRom Maintainer
 #PRODUCT_PROPERTY_OVERRIDES += \
-#    ro.aosp.maintainer="Rcstar6696"
 
 # Build Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
